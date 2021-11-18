@@ -8,7 +8,7 @@ sap.ui.define([
 function(Controller){
 return Controller.extend("egb.sapui5.controller.App",{
         onInit: function(){
-            
+            //prueba para cambios 17.11.2021
         }
 }
        
