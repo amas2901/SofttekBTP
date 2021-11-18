@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+   <HBox>
+          <Panel>
+              <Table items="{jsonSolicitudesModel>/solicitudes/0/cuentas}">
+              <columns>
+                   <Column >
+                     <header>
+                       <Label text="{i18n>requestNumber}"/>
+                     </header>
+                   </Column>
+                   <Column >
+                     <header>
+                         <Label text="{i18n>requestName}"/>
+                     </header>
+                   </Column>
+              </columns>
+              <items>
+               <ColumnListItem >
+                  <cells>
+                    <Label text="{jsonSolicitudesModel>numero}"></Label>
+                    <Label text="{jsonSolicitudesModel>nombre}"></Label>
+                  </cells>
+               </ColumnListItem>
+              </items>
+              </Table>
+          </Panel>
+          <Panel>
+            <VBox id="tableRequests"></VBox>
+          </Panel>
+   </HBox>
+</core:FragmentDefinition>

@@ -1,0 +1,139 @@
+{
+    "solicitudes": [
+        {
+            "empleadoId": 1,
+            "cuentas": [
+                {
+                    "numero": 12345,
+                    "nombre": "Activo1",
+                    "imputable": false
+                },
+                {
+                    "numero": 13523,
+                    "nombre": "Pasivo1",
+                    "imputable": true
+                }
+            ]
+        },
+        {
+            "empleadoId": 2,
+            "cuentas": [
+                {
+                    "numero": 245345,
+                    "nombre": "Cta AAA2",
+                    "imputable": true
+                },
+                {
+                    "numero": 2435,
+                    "nombre": "Cta BBBB2",
+                    "imputable": false
+                }
+            ]
+        },
+        {
+            "empleadoId": 3,
+            "cuentas": [
+                {
+                    "numero": 345345,
+                    "nombre": "Cta AAA3",
+                    "imputable": true
+                },
+                {
+                    "numero": 3435,
+                    "nombre": "Cta BBBB3",
+                    "imputable": false
+                }
+            ]
+        },
+        {
+            "empleadoId": 4,
+            "cuentas": [
+                {
+                    "numero": 445345,
+                    "nombre": "Cta AAA4",
+                    "imputable": true
+                },
+                {
+                    "numero": 4435,
+                    "nombre": "Cta BBBB4",
+                    "imputable": false
+                }
+            ]
+        },
+        {
+            "empleadoId": 5,
+            "cuentas": [
+                {
+                    "numero": 545345,
+                    "nombre": "Cta AAA5",
+                    "imputable": true
+                },
+                {
+                    "numero": 5435,
+                    "nombre": "Cta BBBB5",
+                    "imputable": false
+                }
+            ]
+        },
+        {
+            "empleadoId": 6,
+            "cuentas": [
+                {
+                    "numero": 645345,
+                    "nombre": "Cta AAA6",
+                    "imputable": true
+                },
+                {
+                    "numero": 6435,
+                    "nombre": "Cta BBBB6",
+                    "imputable": false
+                }
+            ]
+        },
+        {
+            "empleadoId": 7,
+            "cuentas": [
+                {
+                    "numero": 745345,
+                    "nombre": "Cta AAA7",
+                    "imputable": true
+                },
+                {
+                    "numero": 7435,
+                    "nombre": "Cta BBBB7",
+                    "imputable": false
+                }
+            ]
+        },
+        {
+            "empleadoId": 8,
+            "cuentas": [
+                {
+                    "numero": 845345,
+                    "nombre": "Cta AAA8",
+                    "imputable": true
+                },
+                {
+                    "numero": 8435,
+                    "nombre": "Cta BBBB8",
+                    "imputable": false
+                }
+            ]
+        },
+        {
+            "empleadoId": 9,
+            "cuentas": [
+                {
+                    "numero": 945345,
+                    "nombre": "Cta AAA9",
+                    "imputable": true
+                },
+                {
+                    "numero": 9435,
+                    "nombre": "Cta BBBB9",
+                    "imputable": false
+                }
+            ]
+        }
+    ]
+}

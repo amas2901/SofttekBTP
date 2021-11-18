@@ -1,0 +1,56 @@
+_schema-version: '3.2'
+ID: accounts
+version: 0.0.1
+modules:
+  - name: accounts-approuter
+    type: approuter.nodejs
+    path: accounts-approuter
+    requires:
+      - name: accounts_html_repo_runtime
+      - name: dest_accounts
+    parameters:
+      disk-quota: 256M
+      memory: 256M
+  - name: accounts_ui_deployer
+    type: com.sap.application.content
+    path: .
+    requires:
+      - name: accounts_html_repo_host
+        parameters:
+          content-target: true
+    build-parameters:
+      build-result: resources
+      requires:
+        - artifacts:
+            - sapui5-content.zip
+          name: sapui5
+          target-path: resources/
+  - name: sapui5
+    type: html5
+    path: sapui5
+    build-parameters:
+      builder: custom
+      commands:
+        - npm run build
+      supported-platforms: []
+resources:
+  - name: accounts_html_repo_runtime
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-runtime
+  - name: accounts_html_repo_host
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-host
+  - name: dest_accounts
+    parameters:
+      service-plan: lite
+      service: destination
+    type: org.cloudfoundry.managed-service
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm install

@@ -1,0 +1,18 @@
+<mvc:View controllerName="egb.sapui5.controler.Details"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core"
+        displayBlock="true">
+        <Page >
+          <customHeader>
+             <Bar>
+                  <contentLeft>
+                     <Button icon="sap.icon://nav-back" press="onBack" />
+
+                  </contentLeft>
+             </Bar>
+          </customHeader>
+        </Page>
+
+</mvc:View>        
+

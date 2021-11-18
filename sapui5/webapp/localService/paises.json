@@ -1,0 +1,14 @@
+{
+    "paisSeleccionado": "",
+        "paises": [
+            {
+                "id": "USA",
+                "nombre": "Estados Unidos",
+                "moneda": "USD"
+            }, {
+                "id": "UK",
+                "nombre": "Reino Unido",
+                "moneda": "GBP"
+            }
+        ]
+}
