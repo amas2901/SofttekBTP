@@ -22,6 +22,7 @@ sap.ui.define([
             //cargar json desde un archivo en el LocalService
             jsonPaisesModel.loadData("./localService/paises.json", false);
             // vincular el modelo a la vista
+            console.log("prueba");
             oView.setModel(jsonPaisesModel, "paisesModel");
             //Cargar modelo de solicitudes
             let jsonSolicitudesModel = new JSONModel();
